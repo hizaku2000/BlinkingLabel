@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 This CocoaPod provides the ability to use a UILabel that may be started and stopped blinking
                        DESC
 
-  s.homepage         = 'https://github.com/Charles Chak/BlinkingLabel'
+  s.homepage         = 'https://github.com/hizaku2000/BlinkingLabel'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Charles Chak' => 'hizaku2000@gmail.com' }
-  s.source           = { :git => 'https://github.com/Charles Chak/BlinkingLabel.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/hizaku2000/BlinkingLabel.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

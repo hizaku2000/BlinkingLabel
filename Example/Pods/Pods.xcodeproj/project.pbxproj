@@ -40,6 +40,7 @@
 		69E80A6C21B4EB6E00CD7E21 /* abto_dtmf-pound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69E80A5A21B4EB6E00CD7E21 /* abto_dtmf-pound.wav */; };
 		69E80A6D21B4EB6E00CD7E21 /* abto_dtmf-4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69E80A5B21B4EB6E00CD7E21 /* abto_dtmf-4.wav */; };
 		69E80A6E21B4EB6E00CD7E21 /* abto_dtmf-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 69E80A5C21B4EB6E00CD7E21 /* abto_dtmf-1.wav */; };
+		69E80A7821B50DB100CD7E21 /* BlinkingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E80A7721B50DB100CD7E21 /* BlinkingLabel.swift */; };
 		885F3F91A453D4D142BC84DBB665B647 /* Pods-BlinkingLabel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC72F7614B4BDE1953579F7FF3FF6DB /* Pods-BlinkingLabel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		951625ABD47FFD40A5FC777F47F4EAAD /* Pods-BlinkingLabel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E16838BD3EF09BB8DD5DA037860406C /* Pods-BlinkingLabel_Example-dummy.m */; };
 		E78A40FD34ACA9FDC7FCC20691749826 /* BlinkingLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA9878BD21B100C4669D6396EECE8381 /* BlinkingLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -104,6 +105,7 @@
 		69E80A5A21B4EB6E00CD7E21 /* abto_dtmf-pound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "abto_dtmf-pound.wav"; sourceTree = "<group>"; };
 		69E80A5B21B4EB6E00CD7E21 /* abto_dtmf-4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "abto_dtmf-4.wav"; sourceTree = "<group>"; };
 		69E80A5C21B4EB6E00CD7E21 /* abto_dtmf-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "abto_dtmf-1.wav"; sourceTree = "<group>"; };
+		69E80A7721B50DB100CD7E21 /* BlinkingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BlinkingLabel.swift; path = BlinkingLabel/Classes/BlinkingLabel.swift; sourceTree = "<group>"; };
 		71FF2EBFE12C4C0AF8F295E0544DD467 /* Pods-BlinkingLabel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlinkingLabel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7913ED12B525FC53C21641092572BC85 /* Pods-BlinkingLabel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlinkingLabel_Example-resources.sh"; sourceTree = "<group>"; };
 		7C0FA612D04ECC8C121F2AA575EE02D4 /* Pods-BlinkingLabel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlinkingLabel_Example.modulemap"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				69E80A4821B4EB2A00CD7E21 /* Resources */,
 				2FF4E74EEB0040C592B2C4BB43D63984 /* Pod */,
 				FA350F65E722BBBA7BA1709599F0A70F /* Support Files */,
+				69E80A7721B50DB100CD7E21 /* BlinkingLabel.swift */,
 			);
 			name = BlinkingLabel;
 			path = ../..;
@@ -424,6 +427,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					64150CA3BE0FB7DE01FE82ED06773489 = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -507,6 +515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E80A7821B50DB100CD7E21 /* BlinkingLabel.swift in Sources */,
 				0D88877A14DC8CBBB61A1B341195015D /* BlinkingLabel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -738,6 +747,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E3A8B5A6E80B3188C60104860CFF32C /* BlinkingLabel.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -763,6 +773,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -841,6 +852,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E3A8B5A6E80B3188C60104860CFF32C /* BlinkingLabel.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
